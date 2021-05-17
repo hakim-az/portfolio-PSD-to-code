@@ -1,0 +1,700 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* -------------------------MAIN STYLES------------------------- */
+.main{
+    width: 100%;
+    height: 140vh;
+    background-image: url("IMAGES/IMG9.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header{
+    padding-top: 450px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header_h2{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: sans-serif;
+    padding: 15px 0;
+    border-top: 2px solid aliceblue;
+    border-bottom: 2px solid aliceblue;
+    text-align: center;
+}
+.header button{
+    background-color: transparent;
+    width: 190px;
+    height: 60px;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    box-shadow: none;
+    font-size: 18px;
+    margin: 50px;
+}
+.header button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+/* -------------------------MOBILE MAIN STYLES------------------------- */
+@media screen and (max-width: 678px){
+    .main{
+        background-color: black;
+        background-image: none;
+        height: 100vh;
+    }
+    .header{
+        padding-top: 170px;
+    }
+}
+/* -------------------------NAVBAR STYLES------------------------- */
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(14, 31, 31);
+    display: flex;
+    flex-direction: row;
+    margin-top: -22px;
+    font-family: sans-serif;
+}
+.navbar_logo{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+}
+.navbar_logo:hover{
+    cursor: pointer;
+}
+.first_logo{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 550;
+    background-color: dimgray;
+    padding: 4px 11px;
+}
+.second_logo{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 550;
+    padding-left: 15px;
+}
+.third_logo{
+    color: rgb(80, 250, 80);
+    font-size: 30px;
+    font-weight: 550;
+}
+.menu{
+    width: 70%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+.menu_item{
+    margin-left: 20px;
+}
+.menu_link{
+    color: aliceblue;
+    font-size: 16px;
+    text-decoration: none;
+}
+.menu_link:hover{
+    color:  rgb(80, 250, 80);
+}
+/* -------------------------MOBILE NAVBAR STYLES------------------------- */
+@media  screen and (max-width: 678px) {
+    .menu{
+        display: none;
+    }
+    .navbar_logo{
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* -------------------------HOME STYLES------------------------- */
+.home{
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.content_home{
+    display: flex;
+    flex-direction: column;
+}
+.content_home > h4{
+    color:  dimgray;
+    font-size: 24px;
+    font-family: sans-serif;
+    padding: 30px 0;
+}
+.content_home > p{
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    text-align: left;
+    padding-bottom: 30px;
+}
+/* -------------------------MOBILE HOME STYLES------------------------- */
+@media screen and (max-width: 678px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .content_home p{
+        text-align: center;
+    }
+}
+/* -------------------------ABOUT STYLES------------------------- */
+.about{
+    width: 100%;
+    background-color:  rgba(105, 105, 105, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+.about_image{
+    background-image: url('IMAGES/IMG8.png');
+    width: 40%;
+    background-size: cover;
+}
+.about_image:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.about_content{
+    width: 60%;
+}
+.text_container{
+    width: 80%;
+    margin: 80px auto 50px;
+}
+.about_header{
+    color:  dimgray;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.about_text{
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.about_skills{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+.skill_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.skill_header h4{
+    color:  dimgray;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+.skills_item p{
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    padding: 10px 35px;
+}
+/* -------------------------MOBILE ABOUT STYLES------------------------- */
+@media screen and (max-width: 678px) {
+    .about{
+        flex-direction: column;
+    }
+    .about_content{
+        width: 100%;
+    }
+    .about_image{
+        background-image: url("IMAGES/IMG8.png");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+    .about_skills{
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,170px);
+    }
+    .about_image img{
+        width: 480px;
+    }
+    .skills_item p{
+        color:  dimgray;
+        font-size: 16px;
+        font-family: sans-serif;
+        opacity: 0.8;
+        padding: 10px 20px;
+    }
+}
+/* -------------------------MYSKILLS STYLES------------------------- */
+.my_skills{
+    width: 80%;
+    margin: 0 auto;
+
+}
+.my_skills_text{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.my_skills_text h3{
+    color:  dimgray;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-top: 70px;
+}
+.my_skills_text p{
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.my_skills_text button{
+    width: 150px;
+    height: 40px;
+    color:  #080;
+    background-color: transparent;
+    border: 2px solid ;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.my_skills_text button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.all_skills{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 100px 100px 100px 100px;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+.all_skills .item{
+    width: 100%;
+    margin: 0 auto;
+}
+.all_skills h4{
+    color:  dimgray;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.bg_1{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(169, 169, 169, 0.3);
+    margin-top: 20px;
+}
+.front_1{
+    width: 90%;
+    height: 30px;
+    background-color:  #080;
+    display: flex;
+    justify-content: flex-end;
+}
+.front_1 p{
+    float: right;
+    display: flex;
+    align-self: center;
+    font-size: 18px;
+    padding-right: 20px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+.bg_2{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(169, 169, 169, 0.3);
+    margin-top: 20px;
+}
+.front_2{
+    width: 80%;
+    height: 30px;
+    background-color:  #080;
+    display: flex;
+    justify-content: flex-end;
+}
+.front_2 p{
+    float: right;
+    display: flex;
+    align-self: center;
+    font-size: 18px;
+    padding-right: 20px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+.bg_3{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(169, 169, 169, 0.3);
+    margin-top: 20px;
+}
+.front_3{
+    width: 90%;
+    height: 30px;
+    background-color: #080;
+    display: flex;
+    justify-content: flex-end;
+}
+.front_3 p{
+    float: right;
+    display: flex;
+    align-self: center;
+    font-size: 18px;
+    padding-right: 20px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+.bg_4{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(169, 169, 169, 0.3);
+    margin-top: 20px;
+}
+.front_4{
+    width: 70%;
+    height: 30px;
+    background-color: #080;
+    display: flex;
+    justify-content: flex-end;
+}
+.front_4 p{
+    float: right;
+    display: flex;
+    align-self: center;
+    font-size: 18px;
+    padding-right: 20px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+/* -------------------------MOBILE MYSKILLS STYLES------------------------- */
+@media screen and(max-width: 678px) {
+   
+}
+/* -------------------------RESUME STYLES------------------------- */
+.resume{
+    width: 100%;
+    margin: 0 auto;
+    background-color:  rgba(105, 105, 105, 0.1);
+}
+.resume_header{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+    color:  dimgray;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.resume_text{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    padding: 40px 10px;
+}
+.resume_btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.resume_btn button{
+    background-color: transparent;
+    width: 200px;
+    height: 44px;
+    color: rgb(51, 230, 34);
+    border: 2px solid  rgb(51, 230, 34);
+    box-shadow: none;
+    font-size: 16px;
+}
+.resume_btn button{
+    cursor: pointer;
+    opacity: 0.8;
+}
+/* -------------------------MY EDUCATION STYLES------------------------- */
+.my_education{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 2px solid  rgba(105, 105, 105, 0.2);
+}
+.education_text{
+    width: 50%;
+    padding-top: 80px;
+}
+.education_text h3{
+    color:  dimgray;
+    font-size: 24px;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+}
+.education_text p{
+    width: 80%;
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    padding-bottom: 20px;
+}
+.education_items{
+    width: 50%;
+    padding: 80px 20px;
+}
+.first_item{
+    
+    margin-bottom: 40px;
+}
+.item_header{
+    padding-bottom: 20px;
+    border-bottom: 2px solid  rgba(105, 105, 105, 0.2);
+}
+.item_header h3{
+    color:  dimgray;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+.item_header p{
+    width: 80%;
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    padding-bottom: 10px;
+}
+.item_header span{
+    background-color: dimgray;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+.item_text{
+    padding: 20px 0;
+    width: 80%;
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+}
+/* -------------------------MOBILE MY EDUCATION STYLES------------------------- */
+@media screen and (max-width: 678px) {
+    .my_education{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid  rgba(105, 105, 105, 0.2);
+    }
+    .education_text{
+        width: 80%;
+        padding-top: 80px;
+        margin: 0 auto;
+    }
+    .education_text p{
+        width: 100%;
+    }
+    .education_items{
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    .item_header p{
+        width: 100%;
+    }
+}
+/* -------------------------PORTFOLIO STYLES------------------------- */
+.portfolio{
+    width: 80%;
+    margin: 40px auto 0;
+    padding-bottom: 120px;
+}
+.portfolio h3{
+    color:  dimgray;
+    font-size: 26px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 30px 0;
+}
+.portfolio p{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    color:  dimgray;
+    font-size: 16px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    text-align: center;
+}
+.portfolio_gallery{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 350px 350px 350px ;
+    justify-content: space-between;
+    grid-row-gap: 30px;
+}
+.item_1{
+    background-image: url('IMAGES/IMG1.png');
+    background-size: cover;
+}
+.item_2{
+    background-image: url('IMAGES/IMG2.png');
+    background-size: cover;
+}
+.item_3{
+    background-image: url('IMAGES/IMG3.png');
+    background-size: cover;
+}
+.item_4{
+    background-image: url('IMAGES/IMG4.png');
+    background-size: cover;
+}
+.item_5{
+    background-image: url('IMAGES/IMG5.png');
+    background-size: cover;
+}
+.item_6{
+    background-image: url('IMAGES/IMG6.png');
+    background-size: cover;
+}
+.item_7{
+    background-image: url('IMAGES/IMG7.png');
+    background-size: cover;
+}
+.item_8{
+    background-image: url('IMAGES/IMG8.png');
+    background-size: cover;
+}
+.item_9{
+    background-image: url('IMAGES/IMG9.png');
+    background-size: cover;
+}
+.portfolio_gallery div:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+/* -------------------------MOBILE PORTFOLIO STYLES------------------------- */
+@media screen and (max-width: 678px) {
+    .portfolio_gallery{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+    .portfolio_gallery div{
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+    }
+}
+/* -------------------------CONTACT STYLES------------------------- */
+.contact{
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+}
+.contact_container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    font-family: sans-serif;
+}
+.contact_text{
+    width: 50%;
+}
+.contact_text h3{
+    color: aliceblue;
+    font-size: 26px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.contact_text .para{
+    color: aliceblue;
+    font-size: 14px;
+    width: 80%;
+    margin: 30px 20px;
+}
+.email{
+    display: flex;
+    margin-bottom: 10px;
+}
+.email label{
+    margin: 0 20px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.email p{
+    color: aliceblue;
+    font-size: 16px;
+}
+.contact_form{
+    width: 50%;
+}
+.contact_form form{
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.contact_form label{
+    color: aliceblue;
+    font-size: 18px;
+    padding: 15px 0;
+
+}
+.contact_form input{
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+}
+.contact_form textarea{
+    border: none;
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+}
+/* -------------------------MOBILE CONTACT STYLES------------------------- */
+@media screen and (max-width: 678px) {
+    .contact_container{
+        flex-direction: column;
+    }
+    .contact_text{
+        width: 100%;
+    }
+    .contact_form{
+        width: 100%;
+    }
+}
